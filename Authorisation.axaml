@@ -1,0 +1,48 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Width="1280" MaxHeight="720" Height="720"
+		MinHeight="720" MaxWidth="1280" MinWidth="1280"
+		x:CompileBindings="False"
+		WindowStartupLocation="CenterOwner"
+        x:Class="skiing.Authorisation"
+        Title="Выбор действий">
+	<Grid>
+		<Border Background="AliceBlue" Width="100" Height="100"
+				HorizontalAlignment="Center" VerticalAlignment="Top"
+				Margin="100">
+			<Image Source="{Binding Image}">
+				
+			</Image>			
+		</Border>
+		<TextBlock Name="timerText" HorizontalAlignment="Center" VerticalAlignment="Center"
+				   Text="" Margin="180 0 0 410">
+			
+		</TextBlock>
+		
+		<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"
+				   Margin="0 0 0 250" Text="{Binding Username}">
+		</TextBlock>
+		<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"
+				   Margin="0 0 0 100" Text="{Binding IdRoleNavigation.Name, StringFormat='Должность - {0}'}">
+		</TextBlock>
+
+		<Button HorizontalAlignment="Center" VerticalAlignment="Center"
+				Margin="0 0 0 0" Background="Transparent" BorderBrush="Black"
+				Content="Сформировать заказ" Click="" >			
+		</Button>
+		<Button HorizontalAlignment="Center" VerticalAlignment="Center"
+				Margin="0 100 0 0" Background="Transparent" BorderBrush="Black"
+				Content="Услуги" Click="">
+		</Button>
+		<Button HorizontalAlignment="Center" VerticalAlignment="Center"
+				Margin="0 200 0 0" Background="Transparent" BorderBrush="Black"
+				Content="История входа" Click="">
+		</Button>
+		<Button HorizontalAlignment="Center" VerticalAlignment="Center"
+				Margin="0 300 0 0" Background="Transparent" BorderBrush="Black"
+				Content="Выход" Click="">
+		</Button>
+	</Grid>
+</Window>
